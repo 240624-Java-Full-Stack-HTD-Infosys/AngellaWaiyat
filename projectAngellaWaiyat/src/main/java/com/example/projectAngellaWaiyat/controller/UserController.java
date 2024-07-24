@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @PostMapping
+    @CrossOrigin
     public UserDTO postuser(@RequestBody UserDTO user){
         if(user != null ){
             user.setLastname("funny");
